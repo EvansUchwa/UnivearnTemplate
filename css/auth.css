@@ -1,0 +1,179 @@
+:root
+{
+    --principalBgColor: rgb(25, 32, 50);
+    --pbcLow1: rgb(17, 22, 34);
+    --colorPrincipal: #00fce7;
+    --colorSecond: #5593e2;
+}
+body,html
+{
+    font-family: var(--myFont1);
+    margin: 0;
+    padding: 0;
+}
+/* #192032 */
+body
+{
+    background-color: var(--principalBgColor);
+}
+button
+{
+    color: white;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 42%, rgba(74,138,209,1) 73%);
+}
+
+div.pageContent
+{
+    width: 100%;
+    height: 100vh;
+    /* max-height: 250vh; */
+    background-image: url('../img/haut.png'),url('../img/bas.png');
+    background-position: right top,left bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+div.formAuth
+{
+    
+}
+div.pageLogo
+{
+    width: calc(var(--modalResponsive) * 0.8);
+    margin: auto auto 0 auto;
+    text-align: center;
+}
+div.pageLogo img
+{
+    width: 80%;
+    /* height: 10vh; */
+    object-fit: cover;
+}
+div.formAuth
+{
+    height: auto;
+    max-height: 70%;
+    width: var(--modalResponsive);
+    margin: 0 auto auto auto;
+    /* background-color: #222c44; */
+    box-shadow: var(--pbcLow1) 0px 0.0625em 0.0625em, var(--pbcLow1) 0px 0.125em 0.5em, var(--pbcLow1) 0px 0px 0px 1px inset;
+    padding: 20px 0;
+}
+div.faTitle
+{
+    width: 80%;
+    margin: 0 auto;
+    color: var(--colorPrincipal);
+    text-align: center;
+    /* margin-bottom: 10px; */
+    padding: 0 !important;
+}
+div.faTitle p
+{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: calc(var(--textSize) * 1.5);
+}
+div.faTitle p::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 42%, rgba(74,138,209,1) 73%);
+}
+
+form.formAuth
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section.inputSection
+{
+    width: 80%;
+    margin: 10px auto;
+}
+section.inputSection input
+{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #111622;
+    color: white;
+    /* margin: 10px auto; */
+}
+div.formBtn button
+{
+    border-radius: 40px;
+}
+
+div.formOption
+{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: calc(var(--textSize) * 0.7);
+}
+div.foRemenberMe
+{
+    display: flex;
+    align-items: center;
+    color: white;
+ }/*961986 */
+div.foForgetPassword a
+{
+    color: white;
+}
+div.formOtherConnexion
+{
+    width: 95%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    margin: 10px auto;
+    color: white;
+    justify-content: center;
+}
+div.formOtherConnexion p
+{
+    font-size: calc(var(--textSize) * 0.8);
+}
+div.formOtherConnexion a
+{
+    margin-left: 5px;
+    color: var(--colorSecond);
+    font-size: var(--textSize);
+}
+
+
+
+
+@media screen and (max-width: 576px)
+{
+    div.pageContent
+    {
+        /* background-image: url('../img/haut.png'),url('../img/bas.png'); */
+        background-size: 100%;
+    }
+    div.formAuth
+    {
+        overflow-y: auto;
+    }
+    div.formOtherConnexion
+    {
+        height: 40px;
+        line-height: 40px;
+        margin: 5px auto;
+    }
+}

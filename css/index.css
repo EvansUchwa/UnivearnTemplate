@@ -1,0 +1,23 @@
+div.pageContent
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.pageLinks
+{
+    height: 60%;
+    background-color: var(--colorWhite2);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+div.pageLinks a
+{
+    background-color: var(--colorWhite4);
+    padding: 10px 15px;
+    margin: auto;
+    color: var(--colorBlack3);
+}

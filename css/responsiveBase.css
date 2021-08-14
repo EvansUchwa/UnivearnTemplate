@@ -1,0 +1,35 @@
+@media screen and (max-width: 576px)
+{
+	:root
+	{
+		--quartResponsive:  100%;
+		--modalResponsive: 90%;
+		--btnActionPadding: 8px;
+		/*--inputHeight: 30px;*/
+		--modalSize: 90%;
+	}
+	
+}
+/*Format tablette*/
+@media screen and (min-width: 576px) and (max-width: 768px)
+{
+	a.cardProduct2
+	{
+		width: 200px;
+	}
+}
+		/*Format petit pc*/
+		@media screen and (min-width: 768) and (max-width: 992px)
+		{
+			
+		}
+		/*Format pc moyen et grand*/
+		@media screen and (min-width: 992) and (max-width: 1200px)
+		{
+			
+		}
+		/*Format desktop et tv plasma*/
+		@media screen and (min-width: 1200px)
+		{
+			
+		}
